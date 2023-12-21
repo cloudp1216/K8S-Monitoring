@@ -1,6 +1,8 @@
 
 ## 一、K8s监控数据持久化
+```
 （注意：经测试发现prometheus数据存储不能使用nfs、包括gpfs，会有丢数据的情况发生，这里数据统一存储在node08节点）
+```
 #### 1、登录node08，创建monitoring存储目录：
 ```shell
 root@node08:~# mkdir -p /data/monitoring
